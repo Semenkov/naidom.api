@@ -12,6 +12,15 @@ from google.appengine.ext.ndb import polymodel
 # -------------   Part I.  NDB models -------------------
 
 
+
+
+
+
+
+
+
+
+
 # url - ключ этого класса
 class Url(ndb.Model):
     cnt = ndb.IntegerProperty()
@@ -83,8 +92,9 @@ class House(ndb.Model):
 # // Class House
 
 
-class NdUrlTest(ndb.Model):
-    """Models an house"""
+
+
+class Page(ndb.Model):
     userid = ndb.StringProperty()
     title = ndb.StringProperty()
     price = ndb.IntegerProperty()
@@ -93,8 +103,6 @@ class NdUrlTest(ndb.Model):
     gps = ndb.GeoPtProperty()
     tags = ndb.IntegerProperty(repeated=True)
     note = ndb.StringProperty()
-# // Class NdUrlTest
-
 
 
 # -------------   Part II.  MESSAGES  -------------------
