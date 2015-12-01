@@ -25,7 +25,7 @@ ALLOWED_CLIENT_IDS = [
 ALLOWED_ADMIN_CLIENT_IDS = [
             endpoints.API_EXPLORER_CLIENT_ID]
 
-@endpoints.api(name='naidom', version='v0.2.0')
+@endpoints.api(name='naidom', version='v0.2.1')
 class NaiDomApi(remote.Service):
 
     @staticmethod
